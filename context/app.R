@@ -1,18 +1,14 @@
 library(shiny)
+library(rjson)
 
-# Define UI ----
+input_data = fromJSON(Sys.getenv('INPUT_JSON'))
+
 ui <- fluidPage(
-    titlePanel("Hello World!")
+    titlePanel("Hello World!"),
+    mainPanel(paste("If this were for real, you would read from: ",
+              input_data['file_relationships']))
 )
 
-# Define server logic ----
-server <- function(input, output) {
+server <- function(input, output) {}
 
-}
-
-# Run the app ----
 shinyApp(ui = ui, server = server)
-
-# That picks a port,
-# https://shiny.rstudio.com/reference/shiny/1.0.2/shinyApp.html
-# , options = list(host = '0.0.0.0', port = 8888)
