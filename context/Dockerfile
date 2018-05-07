@@ -3,4 +3,4 @@ FROM rocker/shiny:latest
 
 COPY . .
 
-CMD ["R", "-e", "shiny::runApp('.', 8888, host='0.0.0.0')"]
+CMD ["R", "-e", "shiny::runApp('.', 80, host='0.0.0.0')"]
