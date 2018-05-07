@@ -1,7 +1,12 @@
 library(shiny)
+library(rjson)
+
+input_data = fromJSON(Sys.getenv('INPUT_JSON'))
 
 ui <- fluidPage(
-    titlePanel("Hello World!")
+    titlePanel("Hello World!"),
+    mainPanel(paste("If this were for real, you would read from: ",
+              input_data['file_relationships']))
 )
 
 server <- function(input, output) {}
