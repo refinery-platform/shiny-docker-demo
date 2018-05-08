@@ -1,7 +1,7 @@
 library(shiny)
 library(rjson)
 
-input_data = fromJSON(Sys.getenv('INPUT_JSON'))
+input_data = fromJSON(Sys.getenv('INPUT_JSON_URL'))
 
 ui <- fluidPage(
     titlePanel("Hello World!"),
