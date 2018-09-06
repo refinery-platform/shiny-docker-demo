@@ -1,5 +1,4 @@
-FROM rocker/shiny:latest
-# No other tags available :(
+FROM rocker/shiny:3.5.1
 
 RUN R -e 'install.packages("rjson")'
 

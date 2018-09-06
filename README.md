@@ -2,8 +2,8 @@
 Demonstrates how to wrap a Shiny app for Refinery
 
 **DEPRECATED**: We actually need to use Shiny server in Refinery, because that gives us a graceful fallback when WebSockets is not available.
-Better examples are [our wrapper for Intervene](https://github.com/refinery-platform/intervene-refinery-docker)
-and our [basic Shiny heatmap](https://github.com/refinery-platform/shiny-heatmap-refinery).
+See [shiny-heatmap-refinery](https://github.com/refinery-platform/shiny-heatmap-refinery) for a very simple example,
+or [intervene-refinery-docker](https://github.com/refinery-platform/intervene-refinery-docker) for an example of porting an existing app.
 
 ## Development
 With a checkout of the project, and R and Docker installed,
